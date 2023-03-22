@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "show_me_what_youve_got_mats/texture"
+	"$bumpmap" "show_me_what_youve_got_mats/texture_normal"
+}
