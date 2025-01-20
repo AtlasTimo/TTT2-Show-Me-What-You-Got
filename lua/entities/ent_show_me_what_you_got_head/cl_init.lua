@@ -77,7 +77,7 @@ function ENT:HeadRechedItsEndPos()
 
     hook.Add("HUDPaint", "ShowMeWhatYouGot" .. LocalPlayer():GetName(), function()
         if (self.endPosTime ~= nil and CurTime() < self.endPosTime + 5) then
-            draw.SimpleTextOutlined("Show me what you got!", "ShowMeWhatYouGotFont", ScrW() / 2, ScrH() / 3, Color(216, 59, 59), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER, 1, Color(255, 255, 255))
+            draw.SimpleTextOutlined("Look straight at the head and drop some weapons.", "ShowMeWhatYouGotFont", ScrW() / 2, ScrH() / 3, Color(216, 59, 59), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER, 1, Color(255, 255, 255))
         end
     end)
 
