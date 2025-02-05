@@ -3,7 +3,7 @@ util.AddNetworkString("NetworkLootValue")
 hook.Add("PlayerDroppedWeapon", "HeadGainedOffering", function(owner, wep)
     if (not owner:Alive() or owner:GetObserverMode() ~= OBS_MODE_NONE) then return end
 
-    local headEntTable = ents.FindInCone(owner:EyePos(), owner:GetAimVector(), 1000, math.cos(math.rad(7)))
+    local headEntTable = ents.FindInCone(owner:EyePos(), owner:GetAimVector(), SHOW_ME_WHAT_YOU_GOT.CVARS.show_me_what_you_got_player_target_range * 2, math.cos(math.rad(10)))
     local lookingAtHead = false
     local headEnt = nil
 
